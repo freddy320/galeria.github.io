@@ -1,0 +1,272 @@
+*{
+margin: 0;
+padding: 0;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    width: 100%;
+   background: #fff;
+   display: grid;
+   flex-direction: column;
+   gap: 30px;
+   margin-bottom: 60px;
+}
+
+nav{
+    width: 100%;
+    height: 60px;
+    background: #04B486; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    z-index: 1;
+}
+
+header{
+    width: 100%;
+    margin-top: 60px;
+    height: 30vh;
+    display: flex;
+    flex-direction:column;
+    justify-content: center ;
+    align-items: center;
+    background: linear-gradient(to bottom, #0489B1, #fff);
+    color: #1C1C1C;
+}
+
+
+header h1{
+ 
+}
+
+
+
+nav ul{
+    width: 85%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    padding: 0;
+    list-style: none;
+    
+}
+
+nav ul li{
+    margin: 20px 5px 20px 20px;
+    
+}
+
+nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul li i{
+    color: #ffffff;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+
+
+#mensaje {
+    text-align: center;
+    margin-top: 10px;
+    color: green;
+}
+
+
+.subir-imagen{
+    width: 40%;
+    margin: auto;
+    border-radius: 10px ;
+    border: 2px dashed #566573;
+    margin-top: 100px;
+
+}
+
+
+.boton-mensaje{
+    margin: auto;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.boton-mensaje button{
+    min-width: 40%;
+    background-color:#088A68;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px ;
+    cursor:pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#imagenContainer{
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    flex-direction:row;
+    gap: 1em; 
+}
+
+
+
+
+#imagenContainer div{
+    width: 100%;
+    height: auto ;
+    border-radius: 10px;
+    background:#ffffff;
+    border: solid 1px #a1abb6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ 
+}
+
+#imagenContainer img{
+    width: 100%;
+    height: 200px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    
+}
+
+
+
+.file-select {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+  }
+  
+  .file-select::before {
+    background-color: #ffffff;
+    color: #273746 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    content: 'Seleccionar'; /* testo por defecto */
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    cursor:pointer;
+  }
+  
+
+  #imagenInput::before {
+    content: 'Seleccionar Archivo';
+    font-size: 15px;
+  }
+  
+ 
+button {
+    padding: 5px 10px;
+    background-color: #088A68; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+    position: relative;
+    
+}
+
+button:hover {
+    background-color: #04B486; 
+}
+
+/* Estilos específicos para el botón Descargar */
+button.descargar {
+    background-color: #28a745;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+button.descargar:hover {
+    background-color: #1c7430; 
+}
+
+button.eliminar {
+    background-color: #dc3545; 
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+button.eliminar:hover {
+    background-color: #b0232b; 
+}
+
+
+.gallery{
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    flex-direction:row;
+    gap: 1em; 
+}
+
+.gallery img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    border: solid 1px #a1abb6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+  
+@media screen and (max-width: 800px) {
+   
+    #imagenContainer{
+        width: 90%;
+        grid-template-columns: repeat(2 ,1fr);
+    }
+
+
+    #imagenInput::before {
+        font-size: 10px;
+      }
+
+      #imagenContainer img{
+        width: 100%;
+        height: 150px;
+    }
+
+    nav ul{
+        width: 95%;
+    }
+
+    Samp{
+        display: none;
+    }
+
+    
+    .header h1{
+        font-size: 15px;
+    }
+
+    .gallery{
+        width: 90%;
+        gap: 8px;
+    }
+
+    .gallery img{
+        width: 100%;
+        height: 120px;
+    }
+
+}
+ 
+
+ 
